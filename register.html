@@ -590,15 +590,16 @@
 						<p>邮箱</p>
 						<input  id="mailBox" class="left1Inp" type="text" placeholder="请输入邮箱">
 						<span class="userspan">邮箱格式不正确,请重新输入</span>
+						<span id="userspan1"></span>
 					</div>
 					<div class="left2">
 						<p>密码</p>
-						<input id="userpass" class="left1Inp" type="possword" placeholder="8-16个字符，必须包含英文.数字.字符中的两种">
-						<span>8-16个字符，必须包含英文.数字.字符中的两种</span>
+						<input id="userPass" class="left1Inp" type="password" placeholder="8-16个字符，必须包含英文.数字.字符中的两种">
+						<span class="userspan">8-16个字符，必须包含英文.数字.字符中的两种</span>
 					</div>
 					<div class="left3">
 						<p>确认密码</p>
-						<input class="left1Inp" type="possword" placeholder="请再次输入密码">
+						<input id="pass" class="left1Inp" type="password" placeholder="请再次输入密码">
 						<span class="userspan">两次密码不一致</span>
 					</div>
 					
@@ -623,20 +624,20 @@
 					</div>
 					<div class="right3">
 						<p>手机验证码</p>
-						<input class="right1Inp2" type="possword" placeholder="手机验证码">
+						<input class="right1Inp2" type="text" placeholder="手机验证码">
 						<a href="#">
 							获取验证码
 						</a>
-						<span class="userspan>请输入手机验证码</span>
+						<span class="userspan">请输入手机验证码</span>
 					</div>
 				</div>
 				<div class="leftBottom">
 					<div class="leftBottomShang">
-						<i></i>
+						<input id="shangGou" type="checkbox"/>
 						<span>我愿意接受来自UA中国官方商城的活动邮件和短信</span>
 					</div>
 					<div class="leftBottomXia">
-						<i></i>
+						<input id="xiaGou" type="checkbox"/>
 						<span>我已阅读并同意</span>
 						<a href="#">&lt;&lt;网站使用详情&gt;&gt;</a>
 					</div>
@@ -647,7 +648,7 @@
 					</div>
 					<div class="account">
 						<p>已有账户
-							<a href="#">立即登录</a>
+							<a href="login.html">立即登录</a>
 						</p>
 					</div>
 				</div>
@@ -789,10 +790,14 @@
 </div>
 </body>
 </html>
+
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
-<!-- <script type="text/javascript" src="js/bannerPic.js"></script> -->
-<script type="text/javascript" src="js/mover.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/ajaxTools.js"></script>
+
+
+
+
 
 

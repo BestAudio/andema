@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>登录</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/log in.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
 <!-- 顶部公共条	 -->
@@ -583,16 +583,18 @@
 		<div class="loginLeft">
 			<h3>会员登录</h3>
 			<div class="wenBen">
-				<input class="name" type="text" placeholder="邮箱/手机">
-				<span>请输入有效的用户名或密码</span>
+				<input id="mailBox" class="name" type="text" placeholder="邮箱/手机">
+				<span class="userspan">请输入有效的用户名或密码</span>
+				<span id="userspan1"></span>
 			</div>
 			<div class="wenBen2">
-				<input class="id" type="text" placeholder="密码">
-				<span>请输入有效的用户名或密码</span>
+				<input id="userPass" class="id" type="password" placeholder="密码">
+				<span class="userspan">请输入有效的用户名或密码</span>
+				<span id="userspan1"></span>
 			</div>
 		
 			<div class="rememberLeft">
-				<i></i>
+				<input id="leftGou" type="checkbox"/>
 				<span>记住我</span>
 			</div>
 			<div class="rememberRight">
@@ -600,7 +602,7 @@
 			</div>
 		
 		<div class="dengLU">
-			<a href="#">立即登录</a>
+			<a id="loginBtn" href="#">立即登录</a>
 		</div>
 		</div>
 		<!-- <div class="small">
@@ -615,7 +617,7 @@
 				<li>· 有机会参与我们的会员回馈活动</li>
 			</ul>
 			<div class="dengLU1">
-			<a href="#">立即登录</a>
+			<a href="register.html">立即注册</a>
 		</div>
 		</div>
 	</div>
@@ -753,6 +755,10 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<!-- <script type="text/javascript" src="js/bannerPic.js"></script> -->
-<script type="text/javascript" src="js/mover.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/ajaxTools.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+
+
+
