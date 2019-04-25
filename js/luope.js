@@ -1,3 +1,4 @@
+
 $(function(){
 	let Imgs;
 	$("#rowsLeftLeftUl").on("mouseenter","li",function(){
@@ -45,4 +46,31 @@ $(function(){
 		$(".mirrorBox").css("display","none");
 		$(".box3").css("display","none");
 	})
+	let url = location.href;
+    let num = parseInt(url.indexOf("="))+1
+    let goodsid = url.substring(num)
+    $.get("php/getGoodsInfo.php",{"goodsId":goodsid},(data)=>{
+		
+		let lis = $(".rowsLefeLeftLi").children();
+		for(let i=0;i<lis.length;i++){
+			$(".rowsLefeLeftLi").children()[i].src=data.goodsImg
+		}
+		$(".rowsRightH1").children().html(data.goodsName)
+		$(".rowsRightSpan").children().html("￥"+data.goodsPrice+".00")
+	},"json")
+
+	let vipName = getCookie("userId");
+	console.log(vipName)
+	let goodsCount = $(".calculateNumIpt").val()
+	console.log(goodsCount)
+	$("#btnReg").on("click",function(){
+		$.get("php/addShoppingCart.php",{"vipName":vipName,"goodsId":goodsid,"goodsCount":goodsCount},(data)=>{
+			if(data == 1){
+			
+			}else{
+			
+			}
+		});
+	})
 })
+

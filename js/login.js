@@ -45,6 +45,7 @@ window.onload = function(){
 						alert("登录成功！");
 						addCookie("userId",my$("#mailBox").value,7);
 						location.href="index.html";
+						console.log(userId);
 					}else{
 						alert("登录失败！");
 					}	
@@ -52,7 +53,55 @@ window.onload = function(){
 			}
 		);		
 	}
+	getUsername();
 }	
+function getUsername(){
+	//1、
+	var str = document.cookie;//username=jzm; userpass=123
+
+	//2、
+
+	//1)、
+	var arr = str.split("; ");//["username=jzm","userpass=123"]
+
+	var userId=null;
+	for(var i=0;i<arr.length;i++){
+		if(arr[i].indexOf("userId=")==0){
+			userId =arr[i].substring("userId=".length);
+			break;
+		}
+	}
+
+	if(userId!=null){
+		my$("#register").innerHTML = userId;
+	}else{
+}
+//添加cookie
+//参数：
+//键：
+//值
+//保质期（单位：天）
+//path
+//domain
+
+function addCookie(key,value,dayCount,path,domain) {
+	var d = new Date();
+	d.setDate(d.getDate()+dayCount);
+
+	var str = key+"="+escape(value)+";expires="+d.toGMTString();	
+
+	if(path!=undefined){
+		str += "path="+path;
+	}
+
+	if(domain!=undefined){
+		str += "domain="+domain;
+	}
+
+	document.cookie = str;
+	
+}
+	
 
 function my$(str){
 	if(str.charAt(0)=="#"){

@@ -35,7 +35,7 @@
 	};
 	
 	//3）、传输数据（过桥）
-	$sqlstr = "insert into goodsInfo values('".$goodsId."','".$goodsName."','".$goodsType."'
+	$sqlstr = "insert into goodsinfo values('".$goodsId."','".$goodsName."','".$goodsType."'
 	,'".$goodsPrice."','".$goodsCount."','".$goodsDesc."','".$goodsImg."'
 	,'".$beiyong1."','".$beiyong2."','".$beiyong3."','".$beiyong4."'
 	,'".$beiyong5."','".$beiyong6."','".$beiyong7."','".$beiyong8."'

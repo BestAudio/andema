@@ -1,0 +1,242 @@
+@charset "UTF-8";
+body, p, dl, dd, ul, ol, li, div, h1, h2, h3, h4, h5, h6, form, input, table, tr, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑",Arial; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+.shoppingCar{
+    width: 100%;
+    height: 100%;
+}
+.arctie{
+    width: 1250px;
+    height: 30px;
+    margin: 70px 118px 36px;
+}
+.arctie h3{
+    float: left;
+    font-size: 28px;
+    color: #1d1d1d;
+    margin-left: 20px;
+}
+.arctie p{
+    float: right;
+    font-size: 20px;
+    color: #1d1d1d;
+    margin-top: 8px;
+}
+.arctie2{
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-left:92px;
+  border-bottom: 1px solid #eeeeee;
+
+}
+.arctie2Shang{
+  width:1280px ;
+  height: 50px;
+  background: #eeeeee;
+  float: left;
+  font-size: 16px;
+  color: #333;
+}
+.arctie2Shang01 span{
+  display: block;
+  line-height: 50px;
+  float: left;
+  margin-left: 16px;
+}
+.arctie2ShangInp{
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+  margin-top: 14px;
+  margin-left: 44px;
+}
+.commodity{
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  width: 593px;
+  height: 50px;
+}
+.unit{
+  float: left;
+  width: 142px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+#boxDiv{
+  width: 1280px;
+  height: 100%;
+  float: left;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+.arctie2Xia{
+  width: 1280px;
+  height:202px;
+}
+.arctie2ShangInp1{
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+  margin-top:0;
+  margin-left: 44px;
+}
+.arctie2Xia01Img{
+  float: left;
+  width: 100px;
+  height: 120px;
+  border: 1px solid #eeeeee;
+  margin-left: 15px;
+}
+.arctie2Xia01Img img{
+  width: 100px;
+  height: 120px;
+}
+.arctie2Xia01{
+  float: left;
+  width: 540px;
+  height: 65px;
+  margin-left: 25px;
+}
+.arctie2Xia01S{
+  /* float: left; */
+  width:420px ;
+  height:24px ;
+  margin-bottom: 15px;
+}
+.arctie2Xia01S a{
+  color: #333;
+}
+.arctie2Xia01X{
+  float: left;
+  width: 467px;
+  height: 26px;
+}
+.arctie2Xia01X p{
+  float: left;
+}
+.arctie2Xia01X span{
+  float: left;
+}
+.unit01{
+  float: left;
+  width: 123px;
+  height: 56px;
+  line-height: 56px;
+  margin-top: 20px;
+}
+.unit02{
+  float: left;
+  width: 192px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 28px;
+  margin-left: 50px;
+}
+.unit03{
+  float: left;
+  width: 84px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 28px;
+  margin-left: -80px;
+}
+.unit04{
+  float: left;
+  width:65px;
+  height: 58px;
+  line-height: 58px;
+  margin-left: 58px;
+  text-align: center;
+}
+.unit0401{
+  display: block;
+  text-decoration:underline;
+  color: #333;
+}
+.unit0402{
+  display: block;
+  margin-top:-18px;
+  text-decoration:underline;
+  color: #333;
+}
+.arctie3{
+  width: 100%;
+  height:100%;
+}
+.arctie301{
+  width: 880px;
+  height: 53px;
+  float: left;
+  margin-left:92px;
+  margin-top: 40px;
+}
+.arctie301Left{
+  float: left;
+  font-size: 18px;
+  color: #1d1d1d;
+}
+.arctie301Center{
+  float: left;
+  margin-left: 250px;
+  font-size: 18px;
+  color: #4a4a4a;
+}
+.arctie301Right{
+  float: left;
+  font-size: 30px;
+  color: #1d1d1d;
+  line-height: 33px;
+  margin-left: 180px;
+  position: relative;
+}
+.arctie301Right01{
+  display: block;
+  position: absolute;
+  left:80px;
+  top:2px;
+
+}
+.arctie301RightSpan{
+  display: block;
+  font-size: 14px;
+  color: #7c7c7c;
+  line-height: 20px;
+  margin-left: 110px;
+}
+.arctie302{
+  float: left;
+  width: 400px;
+  height: 60px;
+  background: red;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 50px;
+  margin-top:30px;
+}
+.arctie302:hover{
+  background: black;
+}
+.arctie302 a{
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+/*# sourceMappingURL=shoppingCar.css.map */

@@ -45,6 +45,8 @@ $(window).scroll(function(){
       $(".login").css("margin-top","80px");
       $(".container").css("margin-top","120px");
       $(".artice").css("margin-top","150px");
+      $(".shoppingCar").css("margin-top","50px");
+      $(".brand").css("margin-top","60px");
     }
   });
   
